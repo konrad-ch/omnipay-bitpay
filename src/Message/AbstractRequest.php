@@ -17,6 +17,16 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
         return $this->setParameter('apiKey', $value);
     }
 
+    public function getBuyerFields()
+    {
+        return $this->getParameter('buyerFields');
+    }
+
+    public function setBuyerFields($value)
+    {
+        return $this->setParameter('buyerFields', $value);
+    }
+
     protected function getHttpMethod()
     {
         return 'POST';
