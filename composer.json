@@ -1,5 +1,5 @@
 {
-    "name": "omnipay/bitpay",
+    "name": "konrad-ch/bitpay",
     "type": "library",
     "description": "BitPay driver for the Omnipay payment processing library",
     "keywords": [
