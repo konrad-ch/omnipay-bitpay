@@ -19,8 +19,10 @@ class PurchaseRequest extends AbstractRequest
         $data['notificationURL'] = $this->getNotifyUrl();
         $data['redirectURL'] = $this->getReturnUrl();
 
-        foreach ($this->getBuyerFields() as $k => $v){
-            $data[$k] = $v;
+        if ($this->getBuyerFields()){
+            foreach ($this->getBuyerFields() as $k => $v) {
+                $data[$k] = $v;
+            }
         }
 
         return $data;
