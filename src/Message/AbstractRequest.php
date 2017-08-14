@@ -27,6 +27,16 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
         return $this->setParameter('buyerFields', $value);
     }
 
+    public function getFullNotifications()
+    {
+        return $this->getParameter('fullNotifications');
+    }
+
+    public function setFullNotifications($value)
+    {
+        return $this->setParameter('fullNotifications', $value);
+    }
+
     protected function getHttpMethod()
     {
         return 'POST';

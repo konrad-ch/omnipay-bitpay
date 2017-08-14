@@ -16,6 +16,7 @@ class PurchaseRequest extends AbstractRequest
         $data['currency'] = $this->getCurrency();
         $data['posData'] = $this->getTransactionId();
         $data['itemDesc'] = $this->getDescription();
+        $data['fullNotifications'] = boolval($this->getFullNotifications());
         $data['notificationURL'] = $this->getNotifyUrl();
         $data['redirectURL'] = $this->getReturnUrl();
 
